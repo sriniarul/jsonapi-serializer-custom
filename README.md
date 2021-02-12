@@ -143,10 +143,7 @@ json_string = MovieSerializer.new(movie).serializable_hash.to_json
     "custom_object_name": {
       "name": "test movie",
       "year": null
-    },
-    
-    
-  }
+    }
 }
 
 ```
