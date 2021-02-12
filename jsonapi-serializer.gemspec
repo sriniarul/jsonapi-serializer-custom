@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'jsonapi/serializer/version'
 
 Gem::Specification.new do |gem|
-  gem.name = 'jsonapi-serializer'
+  gem.name = 'jsonapi-serializer-custom'
   gem.version = JSONAPI::Serializer::VERSION
 
   gem.authors = ['JSON:API Serializer Community']
