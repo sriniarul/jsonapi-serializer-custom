@@ -140,33 +140,12 @@ json_string = MovieSerializer.new(movie).serializable_hash.to_json
 
 ```json
 {
-  "data": {
-    "id": "3",
-    "type": "movie",
-    "attributes": {
+    "custom_object_name": {
       "name": "test movie",
       "year": null
     },
-    "relationships": {
-      "actors": {
-        "data": [
-          {
-            "id": "1",
-            "type": "actor"
-          },
-          {
-            "id": "2",
-            "type": "actor"
-          }
-        ]
-      },
-      "owner": {
-        "data": {
-          "id": "3",
-          "type": "user"
-        }
-      }
-    }
+    
+    
   }
 }
 
