@@ -138,7 +138,6 @@ json_string = MovieSerializer.new(movie).serializable_hash.to_json
 
 #### Serialized Output
 
-```json
 {
   "data": {
     "id": "3",
@@ -169,8 +168,6 @@ json_string = MovieSerializer.new(movie).serializable_hash.to_json
     }
   }
 }
-
-```
 
 #### The Optionality of `set_type`
 By default fast_jsonapi will try to figure the type based on the name of the serializer class. For example `class MovieSerializer` will automatically have a type of `:movie`. If your serializer class name does not follow this format, you have to manually state the `set_type` at the serializer.
