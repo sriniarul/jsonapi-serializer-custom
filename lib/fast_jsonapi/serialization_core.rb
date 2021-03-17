@@ -121,7 +121,7 @@ module FastJsonapi
       def id_from_record(record, params)
         return FastJsonapi.call_proc(record_id, record, params) if record_id.is_a?(Proc)
         return record.send(record_id) if record_id
-        raise MandatoryField, 'id is a mandatory field in the jsonapi spec' unless record.respond_to?(:id)
+        #raise MandatoryField, 'id is a mandatory field in the jsonapi spec' unless record.respond_to?(:id)
 
         record.id
       end
